@@ -1,8 +1,7 @@
 #!/bin/sh
-
-sudo apt update 
+ 
 #Installing Apache2 and Updating the Firewall
-
+sudo apt update
 sudo apt install apache2 -y
 sudo ufw allow in "Apache"
 
@@ -15,6 +14,7 @@ sudo apt install php libapache2-mod-php php-mysql -y
 #Creating a Virtual Host for your Website
 sudo mkdir /var/www/your_domain
 sudo chown -R $USER:$USER /var/www/your_domain
+sudo chown -R $USER:$USER /etc/apache2/sites-available/
 
 sudo echo "<VirtualHost *:80>
     ServerName your_domain
