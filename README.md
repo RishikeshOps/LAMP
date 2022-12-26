@@ -5,7 +5,9 @@ if you want to test my script and host "Hello World" website type below command 
 
 
 git clone https://github.com/RishikeshOps/LAMP.git
-cd LAMP 
+
+cd LAMP
+
 sh Lamp.sh
 
 
